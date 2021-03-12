@@ -56,6 +56,10 @@ browser <-> serverside-ui <-> agent <-> target_jvm
 1. 如果一直没有反应，可以在 ProxyConfigForAgentGetController 类的 getProxyWebSocketUrl 和 getProxyConfig 方法打断点，观察拉起 agent 是否顺利
 2. 可以到目标 pod 的 /kfz/gzzd/agent-bin/logs 看日志
 
+### 底包镜像要求
+1.微服务底包镜像须使用 openjdk:8u212-jdk-alpine3.9
+2.微服务底包镜像须安装 wget 命令
+
 
 ### 集群部署方法：
 
